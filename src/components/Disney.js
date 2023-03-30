@@ -12,7 +12,7 @@ function Disney({ character }) {
         <div className="border border-2 rounded m-5 p-5 border-primary">
           <h2>{character.name}</h2>
           <Link to="./feedback">
-            <img src={character.imageUrl} />
+            <img src={character.imageUrl} alt={character.name} />
           </Link>
           <div className="d-flex justify-content-center">
             <Accordion defaultActiveKey="0" className="w-50">
